@@ -338,21 +338,24 @@ body::-webkit-scrollbar {
     align-content: center;
     align-items: center;
     padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
+    padding-bottom: 0rem;
   }
 
   .projects_div {
     display: flex;
     width: calc(100% - 5rem);
-    height: fit-content;
+    height: auto;
     margin: auto;
     border-radius: 5rem;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     flex-direction: column;
     border-style: solid;
     border-width: 0.2rem;
     border-color: #374200;
     box-shadow: 5px 5px 8px 0 rgba(8, 13, 3, 0.37);
+    overscroll-behavior: contain;
+    touch-action: pan-y;
   }
 
   .projects_header {
